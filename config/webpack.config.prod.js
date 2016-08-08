@@ -16,9 +16,10 @@ module.exports = {
                 loaders:['babel'],
                 exclude:/node_modules/,
             },
+            {test: /\.json$/, loader: 'json',exclude:/node_modules/},
             {
-                test:/\.css$/,
-                loader:['style-loader','css-loader','less-loader'],
+                test:/\.scss$/,
+                loaders: ['style', 'css', 'sass'],
             }
         ]
     },

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "export NODE_ENV=dev&&webpack-dev-server --inline --config config/webpack.config.dev.js --line --hot",
-    "prod": "export NODE_ENV=prod&&webpack-dev-server --inline --config config/webpack.config.prod.js --line --hot"
+    "prod": "export NODE_ENV=prod&&webpack-dev-server --inline --config config/webpack.config.prod.js --host 123.57.141.24 --port 8080 --line --hot"
   },
   "repository": {
     "type": "git",
