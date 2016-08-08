@@ -49,7 +49,6 @@
     "babel-register": "^6.11.6",
     "html-webpack-plugin": "^2.22.0",
     "less-plugin-functions": "0.0.2",
-    "node-sass": "^3.8.0",
-    "sass-loader": "^4.0.0"
+    "node-sass": "^3.8.0"
   }
 }
