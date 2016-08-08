@@ -21,13 +21,19 @@
   "dependencies": {
     "css-loader": "^0.23.1",
     "fetchie": "^0.3.0",
+    "json-loader": "^0.5.4",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "material-ui": "^0.15.2",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
+    "react-flex": "^2.2.7",
+    "react-lazy-load": "^3.0.10",
+    "react-list": "^0.7.20",
+    "react-motion": "^0.4.4",
     "react-redux": "^4.4.5",
     "react-router": "^2.6.0",
+    "react-swipeable-views": "^0.6.5",
     "react-tap-event-plugin": "^1.0.0",
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0",
@@ -41,6 +47,9 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-react-hmre": "^1.1.1",
     "babel-register": "^6.11.6",
-    "html-webpack-plugin": "^2.22.0"
+    "html-webpack-plugin": "^2.22.0",
+    "less-plugin-functions": "0.0.2",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0"
   }
 }

@@ -1,0 +1,31 @@
+{
+  "post/list":{
+    "get":{
+      "code":200,
+      "message":"success",
+      "data":[
+        {
+          "nickName":"老王",
+          "companyName":"facebook",
+          "portrait":"http://wx.qlogo.cn/mmopen/RgBjquZnibWgPzIvGHoWwnzn8ibV0ico7vfaLwhaHa70MRzyP1FOQMXu1fZZNXpQvG5MGUFZREIeN8ZyQV2thNIp292pd6iaI0rI/0",
+          "facepic":"http://wx.qlogo.cn/mmopen/RgBjquZnibWgPzIvGHoWwnzn8ibV0ico7vfaLwhaHa70MRzyP1FOQMXu1fZZNXpQvG5MGUFZREIeN8ZyQV2thNIp292pd6iaI0rI/0",
+          "content":"I'm 老王!"
+        },
+        {
+          "nickName":"老王",
+          "companyName":"facebook",
+          "portrait":"http://wx.qlogo.cn/mmopen/RgBjquZnibWgPzIvGHoWwnzn8ibV0ico7vfaLwhaHa70MRzyP1FOQMXu1fZZNXpQvG5MGUFZREIeN8ZyQV2thNIp292pd6iaI0rI/0",
+          "facepic":"",
+          "content":"I'm 老王!"
+        },
+        {
+          "nickName":"老王",
+          "companyName":"facebook",
+          "portrait":"http://wx.qlogo.cn/mmopen/RgBjquZnibWgPzIvGHoWwnzn8ibV0ico7vfaLwhaHa70MRzyP1FOQMXu1fZZNXpQvG5MGUFZREIeN8ZyQV2thNIp292pd6iaI0rI/0",
+          "facepic":"http://wx.qlogo.cn/mmopen/RgBjquZnibWgPzIvGHoWwnzn8ibV0ico7vfaLwhaHa70MRzyP1FOQMXu1fZZNXpQvG5MGUFZREIeN8ZyQV2thNIp292pd6iaI0rI/0",
+          "content":"I'm 老王!"
+        }
+      ]
+    }
+  }
+}
