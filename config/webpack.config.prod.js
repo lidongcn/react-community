@@ -1,5 +1,6 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin'),
-    path = require('path');
+    path = require('path'),
+    webpack = require('webpack');
 console.log(__dirname);
 module.exports = {
     entry:path.resolve(__dirname, '../app/index.js'),
@@ -22,5 +23,12 @@ module.exports = {
             }
         ]
     },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            }
+        })
+    ]
 
 }

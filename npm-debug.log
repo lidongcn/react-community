@@ -1,13 +1,13 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'dev' ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'prod' ]
 2 info using npm@2.14.4
 3 info using node@v4.1.2
-4 verbose run-script [ 'predev', 'dev', 'postdev' ]
-5 info predev react-community@1.0.0
-6 info dev react-community@1.0.0
+4 verbose run-script [ 'preprod', 'prod', 'postprod' ]
+5 info preprod react-community@1.0.0
+6 info prod react-community@1.0.0
 7 verbose unsafe-perm in lifecycle true
-8 info react-community@1.0.0 Failed to exec dev script
-9 verbose stack Error: react-community@1.0.0 dev: `export NODE_ENV=dev&&webpack-dev-server --inline --config config/webpack.config.dev.js --line --hot`
+8 info react-community@1.0.0 Failed to exec prod script
+9 verbose stack Error: react-community@1.0.0 prod: `export NODE_ENV=prod&&webpack-dev-server --inline --config config/webpack.config.prod.js --port 8080 --line --hot`
 9 verbose stack Exit status 1
 9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
 9 verbose stack     at emitTwo (events.js:87:13)
@@ -20,17 +20,17 @@
 10 verbose pkgid react-community@1.0.0
 11 verbose cwd /Users/liuchang/2016geek/react-community
 12 error Darwin 14.4.0
-13 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "dev"
+13 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "prod"
 14 error node v4.1.2
 15 error npm  v2.14.4
 16 error code ELIFECYCLE
-17 error react-community@1.0.0 dev: `export NODE_ENV=dev&&webpack-dev-server --inline --config config/webpack.config.dev.js --line --hot`
+17 error react-community@1.0.0 prod: `export NODE_ENV=prod&&webpack-dev-server --inline --config config/webpack.config.prod.js --port 8080 --line --hot`
 17 error Exit status 1
-18 error Failed at the react-community@1.0.0 dev script 'export NODE_ENV=dev&&webpack-dev-server --inline --config config/webpack.config.dev.js --line --hot'.
+18 error Failed at the react-community@1.0.0 prod script 'export NODE_ENV=prod&&webpack-dev-server --inline --config config/webpack.config.prod.js --port 8080 --line --hot'.
 18 error This is most likely a problem with the react-community package,
 18 error not with npm itself.
 18 error Tell the author that this fails on your system:
-18 error     export NODE_ENV=dev&&webpack-dev-server --inline --config config/webpack.config.dev.js --line --hot
+18 error     export NODE_ENV=prod&&webpack-dev-server --inline --config config/webpack.config.prod.js --port 8080 --line --hot
 18 error You can get their info via:
 18 error     npm owner ls react-community
 18 error There is likely additional logging output above.
