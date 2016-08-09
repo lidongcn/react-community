@@ -2,7 +2,6 @@ import React,{ Component } from 'react';
 import { render } from 'react-dom';
 import {connect} from 'react-redux';
 import {getpostlist} from '../actions/post';
-import ReactList from 'react-list';
 import '../public/scss/main.scss';
 import BottomLoading from '../components/loading/bottom-loading';
 import IconButton from 'material-ui/IconButton';

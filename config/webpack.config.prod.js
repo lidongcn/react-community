@@ -1,11 +1,14 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin'),
-    path = require('path'),
+var path = require('path'),
     webpack = require('webpack');
 console.log(__dirname);
 module.exports = {
-    entry:path.resolve(__dirname, '../app/index.js'),
+    entry:{
+        app:path.resolve(__dirname, '../app/index.js'),
+        vendor:['react','react-dom','react-redux']
+    },
     output:{
-        path:path.resolve(__dirname, '../'),
+        path:path.resolve(__dirname, '../../build'),
+        publicPath:'build',
         filename:'bundle.js',
     },
     module:{
@@ -28,7 +31,19 @@ module.exports = {
             compress: {
                 warnings: false
             }
-        })
-    ]
+        }),
+        new webpack.DefinePlugin({
+            "process.env": {
+                NODE_ENV: JSON.stringify("production")
+            }
+        }),
+        new webpack.optimize.CommonsChunkPlugin('vendor','vendor.bundle.js')
+    ],
+    resolve: {
+        alias: {
+            react: "/Users/liuchang/2016geek/react-community/node_modules/react/"
+        }
+    }
+
 
 }
