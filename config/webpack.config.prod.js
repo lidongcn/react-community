@@ -41,7 +41,7 @@ module.exports = {
     ],
     resolve: {
         alias: {
-            react: "/Users/liuchang/2016geek/react-community/node_modules/react/"
+            react: "/home/2016geek/react-community/node_modules/react/"
         }
     }
 
