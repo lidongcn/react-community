@@ -1,6 +1,5 @@
 var path = require('path'),
     webpack = require('webpack');
-console.log(__dirname);
 module.exports = {
     entry:{
         app:path.resolve(__dirname, '../app/index.js'),
