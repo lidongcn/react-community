@@ -18,9 +18,6 @@
     margin-left:pxToRem(-330);
     padding: pxToRem(40);
     .login{
-      h2{
-        font-size:$font-biggest;
-      }
       .inputWrapper{
         padding: pxToRem(20) ;
       }
@@ -38,6 +35,9 @@
       text-align: right;
       width:100%;
       margin-top:pxToRem(20);
+    }
+    h2{
+      font-size:$font-biggest;
     }
     .close{
       position: absolute;

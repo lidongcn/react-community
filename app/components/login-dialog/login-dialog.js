@@ -35,7 +35,6 @@ class LoginDialog extends Component {
         });
     }
     render() {
-        console.log(this.props);
         return (<div className={"loginWrapper "+this.props.show}>
                 <Paper className="content" zDepth={1}>
                     <Close className="close" onTouchTap={this.close} />
@@ -49,7 +48,7 @@ class LoginDialog extends Component {
                         <a className="linkregister" href="javascript:void(0);" onTouchStart={this.showregister}>注册账号</a>
                     </div>
                     <div className={"register "+this.state.register}>
-                        <h2>登陆</h2>
+                        <h2>注册</h2>
                         <div className="inputWrapper">
                             <TextField hintText="昵称" style={inputstyle} type="text" />
                             <TextField hintText="密码" style={inputstyle} type="password"/>
