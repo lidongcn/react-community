@@ -11,6 +11,20 @@
 </head>
 <body>
 <div id="app"></div>
+<script src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
+<script>
+    // 应用 ID，用来识别应用
+    var APP_ID = 'WNxRJ40YgjOOHaTeU6XP8fLT-gzGzoHsz';
+
+    // 应用 Key，用来校验权限（Web 端可以配置安全域名来保护数据安全）
+    var APP_KEY = '7vYXXlzPVQArpYi4FvhSM4HR';
+
+    // 初始化
+    AV.init({
+        appId: APP_ID,
+        appKey: APP_KEY
+    });
+</script>
 <script src="./build/vendor.bundle.js"></script>
 <script src="./build/bundle.js"></script>
 <script src="./app/utils/flexible.js"></script>

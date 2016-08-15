@@ -1,12 +1,22 @@
-//font
-$font-small : 12px;
-
-
-
-
 
 //html font-size值
 $htmlfontsize:75;
+
+
+@function pxToRem($px){
+  @return $px/$htmlfontsize*1rem;
+}
+//font
+$font-small : pxToRem(24);
+$font-normal: pxToRem(28);
+$font-big: pxToRem(32);
+$font-bigger:pxToRem(36);
+$font-biggest:pxToRem(40);
+
+//color
+$main-bac-color:#00bcd4;
+
+
 
 
 //默认样式
@@ -114,8 +124,6 @@ a:hover {
 ins, a {
   text-decoration: none;
 }
-@function pxToRem($px){
-  @return $px/$htmlfontsize*1rem;
-}
+
 body{
 }

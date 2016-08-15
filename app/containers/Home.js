@@ -24,6 +24,21 @@ class Home extends Component{
             postlist: [],
             slideIndex:0,
         }
+        //var Todo = AV.Object.extend('Todo');
+        //// 新建一个 Todo 对象
+        //var todo = new Todo();
+        //todo.set('title', '工程师周会');
+        //todo.set('xiaolei','sb');
+        //todo.set('content', '每周工程师会议，周一下午2点');
+        //todo.save().then(function (todo) {
+        //    // 成功保存之后，执行其他逻辑.
+        //    console.log('New object created with objectId: ' + todo.id);
+        //}, function (error) {
+        //    // 失败之后执行其他逻辑
+        //    console.log('Failed to create new object, with error message: ' + error.message);
+        //});
+        //var user =new AV.User();
+        //console.log(user.authenticated());
         this.handleAccounts=this.handleAccounts.bind(this);
         this._scroll=this._scroll.bind(this);
         this.handleChange = this.handleChange.bind(this);

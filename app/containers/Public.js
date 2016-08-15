@@ -8,24 +8,35 @@ import RefreshIndicator from 'material-ui/RefreshIndicator';
 import Snackbar from 'material-ui/Snackbar';
 import '../public/scss/main.scss';
 import injectTapEventPlugin from 'react-tap-event-plugin';
+import LoginDialog from '../components/login-dialog/login-dialog';
+import {showlogindialog,hidelogindialog} from '../actions/logindialog'
 injectTapEventPlugin();
 const lightMuiTheme = getMuiTheme(lightBaseTheme);
 class Public extends Component{
     constructor(props){
         super(props);
         this.handleRequestClose=this.handleRequestClose.bind(this);
+        this.showdialog = this.showdialog.bind(this);
+        this.hidedialog = this.hidedialog.bind(this);
     }
     handleRequestClose(){
         this.setState({
             open: false,
         });
     };
+    showdialog(){
+        this.props.dispatch(showlogindialog());
+    }
+    hidedialog(){
+        this.props.dispatch(hidelogindialog());
+    }
     render(){
         const halfscreen = window.screen.width/2;
         return (
             <div>
             <MuiThemeProvider muiTheme={lightMuiTheme}>
                 <div>
+                    <LoginDialog show={this.props.logindialog.show} dispatch={this.props.dispatch} />
                     {this.props.children}
                     <RefreshIndicator
                         percentage={100}
@@ -51,6 +62,7 @@ class Public extends Component{
 }
 export default connect(state=>{
     return {
-        remind:state.remind
+        remind:state.remind,
+        logindialog:state.logindialog
     }
 })(Public)
