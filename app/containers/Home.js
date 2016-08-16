@@ -15,6 +15,8 @@ import './Home.scss';
 import PostItem from './PostItem';
 import Notification from './Notification';
 import My from './My';
+import PostCreate from 'material-ui/svg-icons/content/create';
+import FloatingActionButton from 'material-ui/FloatingActionButton';
 class Home extends Component{
     constructor(props){
         super(props);
@@ -126,6 +128,11 @@ class Home extends Component{
                     <div className="slide">
                         {list}
                         <BottomLoading show={this.props.fetch.postlist} />
+                        <div style={{position:'fixed',bottom:0,right:0}}>
+                            <FloatingActionButton>
+                                <PostCreate />
+                            </FloatingActionButton>
+                        </div>
                     </div>
                     <div className="slide">
                         <Notification />

@@ -1,5 +1,6 @@
 const initalState = {
-    show:'show'
+    show:'show',
+    login:true
 }
 module.exports = function(state=initalState,action){
     const data = action.data;

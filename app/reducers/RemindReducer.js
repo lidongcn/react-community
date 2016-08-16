@@ -9,6 +9,8 @@ module.exports = function(state=initalState,action){
     switch (action.type){
         case 'success':
             return Object.assign({},state,{action:data.action,message:data.message,type:'success',open:true});
+        case 'warn':
+            return Object.assign({},state,{action:data.action,message:data.message,type:'warn',open:true});
         default:
             return state;
     }
